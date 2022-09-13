@@ -1,5 +1,5 @@
 # Java Reachability Playground Modified by ASecurityGuru for End to End Java DevSecOps Project Case Study
-
+#
 # Updated on 11th June, 2022 - Added SonarCloud Code Coverage Changes
 
 This is an intentionally vulnerable application. It was purposely designed to demonstrate the capabilities of Snyk's Reachable
