@@ -2,8 +2,9 @@ name: Build code, run SAST, SCA, DAST security scans
 on: push
 
 jobs:
- sonarcloud:
+  build:
     runs-on: ubuntu-latest
+    name: Run unit tests and SAST scan on the source code 
     steps:
     - uses: actions/checkout@v2
       with:
