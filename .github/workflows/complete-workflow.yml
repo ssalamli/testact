@@ -11,6 +11,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'
+        distribution: 'temurin'
         cache: maven
     - name: Build with Maven cloud
       run:  mvn -B verify sonar:sonar -Dsonar.projectKey=ssalamli -Dsonar.organization=ssalamli -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
