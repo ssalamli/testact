@@ -12,11 +12,6 @@ jobs:
         fetch-depth: 0
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
-      with:
-        projectBaseDir: /
-        args: >
-        -Dsonar.organization=ssalamli
-        -Dsonar.projectKey=testact
       env:
         Dsonar.projectKey: testact 
         Dsonar.organization: salamli
