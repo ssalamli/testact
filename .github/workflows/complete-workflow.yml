@@ -1,5 +1,10 @@
 name: Build code, run SAST, SCA, DAST security scans
-on: push
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ master ]
 
 jobs:
   build:
@@ -13,8 +18,6 @@ jobs:
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
-        Dsonar.projectKey: testact 
-        Dsonar.organization: salamli
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   security:
