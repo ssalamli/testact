@@ -1,10 +1,7 @@
-# Java Reachability Playground Modified by ASecurityGuru for End to End Java DevSecOps Project Case Study
-#
-# Updated on 11th June, 2022 - Added SonarCloud Code Coverage Changes
+# Java Reachability Playground for End to End Java DevSecOps Project Case Study
 
 This is an intentionally vulnerable application. It was purposely designed to demonstrate the capabilities of Snyk's Reachable
 Vulnerabilities feature and includes both a "Reachable" vulnerability (with a direct data flow to the vulnerable function) and a "Potentially Reachable" vulnerability (where only partial data exists for determining reachability).
-
 
 ## Included vulnerabilities
 ### [Arbitrary File Write via Archive Extraction](https://app.snyk.io/vuln/SNYK-JAVA-ORGND4J-72550)
