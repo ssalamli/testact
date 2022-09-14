@@ -11,8 +11,6 @@ jobs:
         # Disabling shallow clone is recommended for improving relevancy of reporting
         fetch-depth: 0
     - name: SonarCloud Scan
-      run:  mvn -B verify sonar:sonar -Dsonar.projectKey=ssalamli -Dsonar.organization=ssalamli -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
-
       uses: sonarsource/sonarcloud-github-action@master
       env:
         Dsonar.projectKey: ssalamli 
