@@ -16,9 +16,9 @@ jobs:
         projectBaseDir: /
         args: >
         -Dsonar.organization=ssalamli
-        -Dsonar.projectKey=ssalamli
+        -Dsonar.projectKey=testact
       env:
-        Dsonar.projectKey: ssalamli 
+        Dsonar.projectKey: testact 
         Dsonar.organization: salamli
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
